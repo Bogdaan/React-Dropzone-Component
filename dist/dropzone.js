@@ -1321,8 +1321,8 @@ module.exports = DropzoneComponent;
             EXIF.getData(img, function() {
                switch(parseInt(EXIF.getTag(this, "Orientation"))){
                      case 3: orientation = 180; break;
-                     case 6: orientation = -90; break;
-                     case 8: orientation = 90; break;
+                     case 6: orientation = 90; break;
+                     case 8: orientation = 270; break;
                }
             });
 
