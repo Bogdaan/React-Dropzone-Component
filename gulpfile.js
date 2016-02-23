@@ -59,7 +59,7 @@ gulp.task('bundle-js', ['lint-js'], function() {
 
   if (gutil.env.production) {
     stream = stream
-      .pipe(rename('dropzone.min.js'))
+      .pipe(rename('dropzone.js'))
       .pipe(streamify(uglify()))
       .pipe(streamify(header(distHeader, {
         pkg: pkg,
